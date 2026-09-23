@@ -18,5 +18,4 @@ RUN mkdir -p uploads/contracts
 EXPOSE 4444
 
 # Comando obligatorio para iniciar el servidor
-CMD ["npm", "start"]
-
+CMD ["node", "src/server.js"]
