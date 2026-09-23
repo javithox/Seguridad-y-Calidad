@@ -15,7 +15,7 @@ COPY . .
 RUN mkdir -p uploads/contracts
 
 # Exponer el puerto interno de la app
-EXPOSE 3333
+EXPOSE 4444
 
 # Comando obligatorio para iniciar el servidor
 CMD ["npm", "start"]
