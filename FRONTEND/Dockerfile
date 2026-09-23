@@ -4,7 +4,7 @@ FROM node:20 AS builder
 WORKDIR /app
 
 # Argumento para la URL de la API
-ARG VITE_API_URL=http://localhost:4000
+ARG VITE_API_URL=http://localhost:4444
 
 # Copiar archivos de dependencias
 COPY package*.json ./
