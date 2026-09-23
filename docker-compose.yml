@@ -29,7 +29,7 @@ services:
     container_name: cuidarteplus-backend-ev
     hostname: cuidarteplus-api
     environment:
-      - PORT=4000
+      - PORT=4444
       - DATABASE_URL=postgres://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@cuidarteplus-postgres-ev:5432/${POSTGRES_DB:-cuidarteplus}
       - NODE_ENV=${NODE_ENV:-production}
       - JWT_SECRET=${JWT_SECRET:-your-secret-key-change-in-production}
