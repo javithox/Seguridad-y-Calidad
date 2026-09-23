@@ -5,20 +5,18 @@ WORKDIR /app
 # Copiar archivos de dependencias
 COPY package*.json ./
 
-# Instalar dependencias
+# Instalar dependencias de producción
 RUN npm ci --only=production
 
-# Copiar código de la aplicación
-COPY src/ ./src/
-COPY sql/ ./sql/
-COPY uploads/ ./uploads/
+# Copiar el código fuente
+COPY . .
 
-# Crear directorio para uploads si no existe
+# Crear directorio para subida de archivos
 RUN mkdir -p uploads/contracts
 
-# Exponer puerto
+# Exponer el puerto interno de la app
 EXPOSE 3333
 
-# Comando para iniciar la aplicación
-CMD ["node", "src/app.js"]
+# Comando obligatorio para iniciar el servidor
+CMD ["npm", "start"]
 
