@@ -17,7 +17,7 @@ COPY uploads/ ./uploads/
 RUN mkdir -p uploads/contracts
 
 # Exponer puerto
-EXPOSE 3000
+EXPOSE 3333
 
 # Comando para iniciar la aplicación
 CMD ["node", "src/app.js"]
