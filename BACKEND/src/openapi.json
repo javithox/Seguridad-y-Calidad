@@ -4,7 +4,7 @@
     "title": "cuidarteplus API (español)",
     "version": "1.0.0"
   },
-  "servers": [{ "url": "http://localhost:4444" }],
+  "servers": [{ "url": "http://3.238.192.10:4444" }],
   "paths": {
     "/autenticacion/login": {
       "post": {
