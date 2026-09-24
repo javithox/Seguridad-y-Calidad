@@ -15,7 +15,7 @@ COPY . .
 RUN mkdir -p uploads/contracts
 
 # Puerto de la aplicación
-EXPOSE 4000
+EXPOSE 4444
 
 # Iniciar backend
 CMD ["node", "src/app.js"]
