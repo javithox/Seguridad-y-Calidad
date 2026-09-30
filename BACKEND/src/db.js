@@ -3,7 +3,7 @@ require("dotenv").config();
 
 const connectionString =
   process.env.DATABASE_URL ||
-  "postgres://postgres:alone15@localhost:5432/cuidarteplus";
+  "postgres://postgres:postgres@cuidarteplus-postgres-ev:5432/cuidarteplus";
 
 const pool = new Pool({ connectionString });
 
