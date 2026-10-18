@@ -3,7 +3,7 @@ FROM node:20 AS builder
 
 WORKDIR /app
 
-ARG VITE_API_URL=http://184.196.66.174:4444
+ARG VITE_API_URL=http://18.209.247.121:4444
 ENV VITE_API_URL=${VITE_API_URL}
 
 # Copiar archivos de dependencias
