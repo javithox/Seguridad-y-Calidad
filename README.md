@@ -45,3 +45,5 @@ Abre la terminal y situate en la raíz del proyecto y ejecuta el comando:
 	4.4 Nombre de usuario: `postgres`
 	4.5 Contraseña: `postgres`
 # Seguridad-y-calidad
+
+sqp_6da6e3efae8dd8adde820c59e3d76d6c4365f718
