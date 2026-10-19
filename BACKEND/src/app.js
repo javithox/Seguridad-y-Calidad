@@ -46,11 +46,4 @@ app.get("/", (req, res) => {
   res.json({ name: "cuidarteplus", status: "ok" });
 });
 
-// --- INICIALIZAR EL SERVIDOR ---
-const PORT = process.env.PORT || 4444;
-
-app.listen(PORT, () => {
-  console.log(`Servidor de CuidartePlus ejecutándose en el puerto ${PORT}`);
-});
-
 module.exports = app;
