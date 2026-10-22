@@ -4,6 +4,7 @@ const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
 const swaggerUi = require("swagger-ui-express");
+const app = require("./app");
 
 const { pool } = require("./db");
 
@@ -16,7 +17,7 @@ const tipoExamenRoutes = require("./routes/tipo-examen");
 const auditRoutes = require("./routes/audit");
 const rolesRoutes = require("./routes/roles");
 
-const app = express();
+
 
 app.use(cors());
 app.use(express.json());
@@ -44,6 +45,12 @@ app.use("/files/documentos", express.static(uploadsDir));
 
 app.get("/", (req, res) => {
   res.json({ name: "cuidarteplus", status: "ok" });
+});
+
+const PORT = process.env.PORT || 4444;
+
+app.listen(PORT, () => {
+  console.log(`Servidor de CuidartePlus ejecutándose en el puerto ${PORT}`);
 });
 
 module.exports = app;
