@@ -4,7 +4,7 @@ const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
 const swaggerUi = require("swagger-ui-express");
-const app = require("./app");
+const app = express();
 
 const { pool } = require("./db");
 
